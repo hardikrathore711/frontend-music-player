@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+    background-color: #371156;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+    border-radius: 50%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.link{
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.container {
+    /* background-color: black; */
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    
+    /* margin: 0px auto; */
+    width: 100%;
+    /* border-radius: 12px; */
+    padding: 34px 0;
+    background-image: url("assets/background.jpg");
+    /* overflow: hidden; */
+    background-size: cover;
+    background-position: center;
+}
+
+.songItemContainer {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: rgba(50, 3, 43, 0.653);
+
+    color: white;
+    margin: 3px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 17vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.bottommm{
+    display: flex;
+    height: 70%;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+.middle{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-30%);
+}
+
+.shuff {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    /* margin: 6px; */
+    /* margin-bottom: -175px; */
+    cursor: pointer;
+}
+
+
+.songInfo {
+    /* position: absolute; */
+    /* left: 10vw; */
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        /* background-color: red; */
+        overflow-x: hidden;
+    }
+
+}
+.pagination a {
+    color: white;
+    float: left;
+    margin-left: 20px;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+
+/* Style the active/current link */
+
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+
+/* Add a grey background color on mouse-over */
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+a.nav-link:link {
+    color: white;
+    text-decoration: none;
+}
+
+a.nav-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a.nav-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a.nav-link:active {
+    color: white;
+    text-decoration: none;
+}
+
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seek_slider,
+.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: white;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+/* Modify the appearance of the slider thumb */
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+}
+
+.seek_slider {
+    width: 60%;
+}
+
+.volume_slider {
+    width: 30%;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+    padding: 10px;
+}
